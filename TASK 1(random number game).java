@@ -13,15 +13,16 @@ public class Main
 	public static void main(String[] args) 
 	{
                                        
-       int a,b,flag=0,count=0;                   
+       int a,b,flag=0,count=0;
+       System.out.println("It will generate a random number within a specified range, such as 1 to 100.\n");           
        while(flag==0)                       
         {   
             Scanner demo= new Scanner(System.in); 
-            System.out.print("Enter your guess:");
+            System.out.print("Enter your guess : ");
             a=demo.nextInt();
             Random rand=new Random();
-            b=rand.nextInt(5);
-            System.out.println("Random number:"+b);
+            b=rand.nextInt(100);
+            System.out.println("Random number : "+b);
             if(b==a)
             {
               System.out.println("guess is correct\n\n");
@@ -44,7 +45,7 @@ public class Main
             }
             
         }
-      System.out.println("number of attempt:"+count);
+      System.out.println("number of attempt : "+count);
       
    }
 

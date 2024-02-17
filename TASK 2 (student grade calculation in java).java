@@ -14,29 +14,31 @@ public class Main
         int i,a;
         float s1,s2,s3,s4,s5,avg,sum;
         Scanner demo=new Scanner(System.in);
-        System.out.print("Enter the number of students:");
+        System.out.println("                                      STUDENT GRADE CALCULATOR");
+        System.out.println("                                      ------------------------");
+        System.out.print("\nEnter the number of students : ");
         a=demo.nextInt();
         for(i=0;i<a;i++)
         {
-           System.out.print("Enter Student Name:");
-           String str=demo.next();                         //in java we have to declare a string in this way only...no need to create array for string like c
-           System.out.print("Enter your mark in s1:");
+           System.out.print("Enter Student Name : ");
+           String str=demo.next();                        
+           System.out.print("Enter your mark in s1 : ");
            s1=demo.nextFloat();
-           System.out.print("Enter your mark in s2:");
+           System.out.print("Enter your mark in s2 : ");
            s2=demo.nextFloat();
-           System.out.print("Enter your mark in s3:");
+           System.out.print("Enter your mark in s3 : ");
            s3=demo.nextFloat();
-           System.out.print("Enter your mark in s4:");
+           System.out.print("Enter your mark in s4 : ");
            s4=demo.nextFloat();
-           System.out.print("Enter your mark in s5:");
+           System.out.print("Enter your mark in s5 : ");
            s5=demo.nextFloat();
            sum=s1+s2+s3+s4+s5;
-           System.out.print("Total marks:"+sum);
+           System.out.print("Total marks : "+sum);
            System.out.print("\n");
            avg=sum/5;
-           System.out.print("avg:"+avg);
+           System.out.print("avg : "+avg);
            System.out.print("\n");
-           System.out.print(str+":");
+           System.out.print(str+" : ");
            if(avg>=90)
           {
               System.out.print("A+ grade");
